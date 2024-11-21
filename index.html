@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <title>Bookmarker</title>
+  </head>
+  <body class="body-bg-beight">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-12">
+          <h1 class="text-center">Bookmarker</h1>
+        </div>
+      </div>
+
+    <div class="row">
+        <div class="col-md-12 col-lg-12">
+            <h2 class="text-center">Bookmark your favorite sites</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 col-lg-12">
+            <div class="form-group mt-3">
+              <label for="siteName">Site Name</label>
+              <input type="text" class="form-control" id="siteName" />
+            </div>
+            <div class="form-group mt-3">
+              <label for="siteUrl">Site URL</label>
+              <input type="text" class="form-control" id="siteUrl" />
+            </div>
+            <div class="form-group mt-5">
+                <button id="submit" onclick="addBookmark()" class="btn btn-primary w-75   d-block mt-3 mx-auto">Submit</button>           
+                <button id="update"  class="btn btn-warning w-75 d-none  d-block mt-3 mx-auto">Update</button>           
+                
+            </div>
+         </div>
+    </div>
+    <div class="row">    
+        <div class="col-md-12 col-lg-12 mt-5">
+            <h2 class="text-center">Bookmarks</h2>
+        </div>  
+        <div class="col-md-12 col-lg-12">
+            <table class="table mt-4 text-center bg-light">
+                <thead>
+                  <tr>
+                    <th class="text-capitalize">index</th>
+                    <th class="text-capitalize">Website Name</th>
+                    <th class="text-capitalize">Visit</th>
+                    <th class="text-capitalize">Edit</th>
+                    <th class="text-capitalize">Delete</th>
+                  </tr>
+                </thead>
+                <tbody id="tableContent">
+                    
+                    
+                </tbody>
+              </table>
+        </div>
+
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
