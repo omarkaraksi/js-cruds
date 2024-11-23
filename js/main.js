@@ -14,7 +14,7 @@ function  addBookmark() {
         siteName: siteName.value,
         siteUrl: siteUrl.value,
     };
-        if(validateForm(siteName) && validateForm(siteUrl)){
+    if(validateForm(siteName) && validateForm(siteUrl)){
         bookmarks.push(bookmark);
         localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
         siteName.value = "";
