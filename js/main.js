@@ -100,10 +100,12 @@ function validateForm(element){
         element.classList.add("is-valid");
         elmnt.nextElementSibling.innerHTML = "";
         return true;
+    }else{
+        elmnt.nextElementSibling.innerHTML = regex[element.id]['message'];
+        element.classList.remove("is-valid");
+        element.classList.add("is-invalid");
     }
-    elmnt.nextElementSibling.innerHTML = regex[element.id]['message'];
-    element.classList.remove("valid");
-    element.classList.add("in-valid");
+    
     return false;
    
 
