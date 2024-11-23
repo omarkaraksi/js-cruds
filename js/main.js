@@ -95,8 +95,8 @@ function validateForm(element){
 
 
     var regex = {
-        'siteName' : {'regex' : /^[A-Z]\w{0,3}\w{0,10}$/,'message' : 'Enter a valid name starting with uppercase then a word may enter space then end by word'},
-        'siteUrl' : {'regex' : /^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)$/ ,'message' : 'Enter a valid url starting with http or https'}
+        'siteName' : {'regex' : /^[A-Z]\w{0,3}\w{0,10}$/,'message' : 'Enter a valid name starting with uppercase then a word may enter space then end by word <br> example: Google'},
+        'siteUrl' : {'regex' : /^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)$/ ,'message' : 'Enter a valid url starting with http or https  <br> example: https://www.google.com'  }
     };
 
      
