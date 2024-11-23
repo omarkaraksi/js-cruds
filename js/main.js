@@ -63,7 +63,7 @@ function updateBookmark(index) {
         siteUrl: siteUrl.value,
     };
     bookmarks[index] = bookmark;
-    if(validateForm(siteName) || validateForm(siteUrl)){
+    if(validateForm(siteName) && validateForm(siteUrl)){
     
     localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
     renderBookmarks();
