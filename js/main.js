@@ -14,6 +14,8 @@ function  addBookmark() {
         siteName: siteName.value,
         siteUrl: siteUrl.value,
     };
+    validateForm(siteName) ;
+    validateForm(siteUrl);
     if(validateForm(siteName) && validateForm(siteUrl)){
         bookmarks.push(bookmark);
         localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
@@ -108,6 +110,7 @@ function validateForm(element){
         elmnt.nextElementSibling.innerHTML = regex[element.id]['message'];
         element.classList.remove("is-valid");
         element.classList.add("is-invalid");
+        
     }
     
     return false;
