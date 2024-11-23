@@ -42,9 +42,13 @@ function renderBookmarks() {
 
 }
 function deleteBookmark(index) {
-    bookmarks.splice(index, 1);
-    localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
-    renderBookmarks();
+    var confirmedDelete = confirm("Are you sure you want to delete this bookmark?");
+    if(confirmedDelete){
+         bookmarks.splice(index, 1);
+        localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+        renderBookmarks();
+    }
+   
 }
 
 function editBookmark(index) {
